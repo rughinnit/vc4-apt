@@ -27,8 +27,14 @@ echo "deb [signed-by=/usr/share/keyrings/vc4top-archive-keyring.gpg] https://rug
   | sudo tee /etc/apt/sources.list.d/vc4-apt.list
 sudo apt update && sudo apt install vc4top vc4top-dkms vc4infer
 
-pip install --index-url https://rughinnit.github.io/vc4-apt/pip/simple/ vc4infer
+pip install --extra-index-url https://rughinnit.github.io/vc4-apt/pip/simple/ vc4infer
 ```
+
+`--index-url https://rughinnit.github.io/vc4-apt/pip/simple/` also works once
+`numpy`, `onnx` and `pillow` are present (the `vc4infer` .deb installs them, and
+`python3 -m venv --system-site-packages` makes them visible); the index itself
+only carries `vc4infer`, so a bare `--index-url` cannot resolve the
+dependencies.
 
 ## Publishing
 
