@@ -1,0 +1,90 @@
+Package: vc4infer
+Architecture: arm64
+Version: 1.1.2
+Priority: optional
+Section: misc
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 14308
+Depends: python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
+Suggests: vc4d
+Filename: pool/main/v/vc4infer/vc4infer_1.1.2_arm64.deb
+Size: 11640364
+MD5sum: 2fe2143c5f8f8715c16311b5ede958b3
+SHA1: 22b5233e1216a10289f5993ed82ef72b12a1f19e
+SHA256: f9c57f1c6a811641b648fd488e551caddbecb14ef27486799434ba75e3a65351
+SHA512: 8bfd0f1b5a37861aea31cc2753d69592b603df74120ea3a02a27a440b25f9e60ca8413c9c5c8411d961b68e2011092c469544238e85701fad8bcde185c5638f3
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: ONNX inference on the Raspberry Pi VideoCore IV QPUs
+ vc4infer executes fixed-shape fp32 ONNX graphs on the VideoCore IV (V3D) QPUs
+ of the Raspberry Pi 1/2/3, Zero and CM1/CM3.  It ships the libvc4infer engine
+ library and headers, a CLI (run, bench, nodes, selftest), the QPU kernel
+ generator, a set of reference models, and the Python package system-wide
+ (vc4infer.Engine, vc4infer.Device, vc4infer.postprocess, vc4infer.yolo).
+ .
+ Every float operation runs on the QPUs; the ARM only moves bytes and does
+ integer shape bookkeeping.  An operator or attribute the engine cannot
+ dispatch raises an error naming the node and its ONNX op type -- there is no
+ CPU fallback.  Detection heads (YOLOv8/YOLO11) are decoded on the host with
+ class-aware NMS.
+ .
+ Unprivileged use goes through the vc4d helper daemon (/run/vc4d.sock); the
+ client never opens /dev/mem.
+
+Package: vc4top-dkms
+Architecture: all
+Version: 1.0.5
+Priority: optional
+Section: kernel
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 100
+Depends: dkms
+Recommends: linux-headers-arm64 | raspberrypi-kernel-headers
+Filename: pool/main/v/vc4top/vc4top-dkms_1.0.5_all.deb
+Size: 10416
+MD5sum: 14aa56f32b5b0732682571ae6635ff75
+SHA1: 2d7dc4f01142e4273448db50e3dce2533c50452e
+SHA256: 17de846bcdb6ddddff8519abc7fd931ada971c0341e648259a1671257991b501
+SHA512: 9da298e83f3cb58fd4b23fb1d48009d5ab42f21dfe601e100668779b82cd1e13857197423fda032f72c799164067e032ca77b98fdfb2479b07354a64fc24784f
+Homepage: https://github.com/rughinnit/vc4top
+Description: V3D register and counter module for vc4top (DKMS)
+ vc4mon is a small out-of-tree kernel module that exposes the VideoCore IV
+ (V3D) register block under /sys/kernel/vc4mon/, so an unprivileged vc4top
+ can read the same registers without /dev/mem and sample the performance
+ counters through two write-only files.
+ .
+ The module does not register a platform driver, does not bind or unbind
+ vc4_v3d and does not request_mem_region().  ident/regs/perf are read-only
+ 0444; perf_enable (PCTRE) and perf_clear (PCTRC) are the only writable
+ files.  A udev helper grants group vc4 write-only access to those two.
+ .
+ Source is installed in /usr/src/vc4top-1.0.5 and built for the running
+ kernel with DKMS.  Kernel upgrades rebuild it automatically at boot once
+ the matching kernel headers are present.
+
+Package: vc4top
+Architecture: arm64
+Version: 1.0.5
+Priority: optional
+Section: utils
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 584
+Depends: libc6 (>= 2.38), libstdc++6 (>= 13), libgcc-s1 (>= 3.0)
+Recommends: raspi-config
+Filename: pool/main/v/vc4top/vc4top_1.0.5_arm64.deb
+Size: 139898
+MD5sum: b559c5ef65bda633e2ffbddabea49ceb
+SHA1: 0f771d00e757193ea4f0b9d1a7c61d5bb40ea0ac
+SHA256: 8855c1f8ed4bc582f20494607d06031245541c835d0cf6f695d34b10460b8a15
+SHA512: dd561b6d6dfd8d3b7d544ea164a4770ca10055366ab5b701f5ec7424735c795bd7f4daef5e2c9302b8f6361560d674e6a9fd3188a4abeb7ae62aa9dcfab6310b
+Homepage: https://github.com/rughinnit/vc4top
+Description: Realtime VideoCore IV / V3D QPU telemetry monitor
+ btop-style terminal telemetry monitor for the Broadcom VideoCore IV
+ GPU/QPU found on Raspberry Pi 1, 2, 3, Zero and CM1/CM3. Shows system clocks,
+ voltages, temperature, throttling and ARM/GPU-CMA memory utilization; QPU
+ scheduler, queues and VPM state; all 30 V3D performance-counter sources; and the
+ full V3D register map. The TUI adapts to the terminal width and has headless
+ snapshot, counter-dump, register-dump and CSV polling modes. Registers are read
+ through /dev/mem as root or through the vc4mon sysfs module when unprivileged;
+ performance counters are sampled unprivileged through vc4mon's narrow
+ perf_enable/perf_clear write attributes.
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>vc4-apt - VideoCore IV package archive</title></head><body>
+<h1>vc4-apt</h1>
+<p>Single signed apt repository and pip index for the Raspberry Pi
+VideoCore IV packages: <code>vc4top</code>, <code>vc4top-dkms</code> and
+<code>vc4infer</code>.</p>
+<h2>apt</h2>
+<pre>
+curl -fsSL https://rughinnit.github.io/vc4-apt/key.asc \
+  | sudo gpg --dearmor -o /usr/share/keyrings/vc4top-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/vc4top-archive-keyring.gpg] https://rughinnit.github.io/vc4-apt stable main" \
+  | sudo tee /etc/apt/sources.list.d/vc4-apt.list
+sudo apt update &amp;&amp; sudo apt install vc4top vc4top-dkms vc4infer
+</pre>
+<h2>pip</h2>
+<pre>
+pip install --index-url https://rughinnit.github.io/vc4-apt/pip/simple/ vc4infer
+</pre>
+<h2>Files</h2>
+<ul>
+<li><a href="key.asc">key.asc</a> (archive key E4CB3BA058DAAB2BE60EF5D6B736BB9A48B94108)</li>
+<li><a href="dists/stable/InRelease">dists/stable/InRelease</a></li>
+<li><a href="SHA256SUMS.txt">SHA256SUMS.txt</a></li>
+<li><a href="pip/">pip wheel index</a></li>
+</ul>
+<p>The previous location <code>https://rughinnit.github.io/vc4top</code> is
+deprecated and kept only as a fallback.</p>
+</body></html>
