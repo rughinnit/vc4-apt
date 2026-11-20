@@ -179,11 +179,11 @@ Installed-Size: 14552
 Depends: python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
 Suggests: vc4d, vc4infer-dev, python3-onnxruntime
 Filename: pool/main/v/vc4infer/vc4infer_1.2.2_arm64.deb
-Size: 11686208
-MD5sum: 877b9dbfdbf45bdea879a444b6dfe49d
-SHA1: 2ff5d4cdfe6387d8b78be4a716b630c2edabb552
-SHA256: 360f6d7a6f6b40100ec64e3c1df3e18d3b592cdc926d6f9686b5cc76f48f75d2
-SHA512: 261d04c3ffc38d5f23953a932589baf6eda09ac9357bbfded5a26e80e5ee64dab1adfc5691c08a42e14fd62a901fb6bf76e93deeb08ec6c0913dee15a70c7581
+Size: 11685980
+MD5sum: 5dff1359c5843d5df8b02a41e0b3e4e0
+SHA1: 32312396660ad13e286493e065554ff1f02aaa56
+SHA256: 4fd95341f59ad9cc0b31937033cd0a97ebf23cd718b8ad17a0e710ce1269ecce
+SHA512: dfd5e9b3b61243fd9c0dafbf8dec0da22fed26f527fa66a969e7051b0e28c9a2b38c51f182d0c53e8d296232acc2be05a5027ba09aeaa48eb4383ba076108038
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: ONNX inference on the Raspberry Pi VideoCore IV QPUs
  vc4infer executes fixed-shape fp32 ONNX graphs on the VideoCore IV (V3D) QPUs
