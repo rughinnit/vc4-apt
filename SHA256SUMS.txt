@@ -5,6 +5,7 @@ de09e14b1af413f285b848911a2730af5bb287d6e18bbe4684707621b681b133  pool/main/v/vc
 64964a84ac7c1461583e652f7965e1376dac5d2aac79303bc2fe7fbd104a9671  pool/main/v/vc4-query/vc4-query_1.0.1_arm64.deb
 02b8a83224286afb80de01047e8e235b2725269bf76b201612355fbe4ba91c11  pool/main/v/vc4-query/vc4-query_1.0.2_arm64.deb
 a8f7773072a5ee8e781692864e6ce886c3348acf438498646d0009a116a0f1fe  pool/main/v/vc4-smi/vc4-smi_1.0.0_arm64.deb
+c262c7d7ddf049649b81316f908328822efa34d005e468f82e663f0eb985116a  pool/main/v/vc4-toolkit-fast/vc4-toolkit-fast_1.2.5_arm64.deb
 0f2e1d32d86613d18a99ba7d8b32df18a0e2e7ab792c7f2169c54ccf5f834bfe  pool/main/v/vc4-toolkit/vc4-toolkit_1.2.2_arm64.deb
 4d0f54f484af33129ff0c1bd06a57433c4acf621e7590b627ae09938113b5fee  pool/main/v/vc4-toolkit/vc4-toolkit_1.2.3_arm64.deb
 8855c1f8ed4bc582f20494607d06031245541c835d0cf6f695d34b10460b8a15  pool/main/v/vc4top/vc4top_1.0.5_arm64.deb
