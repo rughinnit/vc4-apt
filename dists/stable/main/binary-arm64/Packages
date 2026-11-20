@@ -56,17 +56,17 @@ Version: 1.2.2
 Priority: optional
 Section: metapackages
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
-Installed-Size: 18360
+Installed-Size: 18412
 Provides: vc4-toolkit
 Depends: vc4d (>= 1.2.1), vc4infer-dev (>= 1.2.2), vc4-query (>= 1.0.0), vc4-smi (>= 1.0.0), vc4train (>= 1.0.0), vc4top (>= 1.0.5), vc4top-dkms (>= 1.0.5), python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
 Conflicts: vc4-toolkit, vc4infer
 Replaces: vc4-toolkit, vc4infer
 Filename: pool/main/v/vc4-toolkit-fast/vc4-toolkit-fast_1.2.2_arm64.deb
-Size: 11726280
-MD5sum: b1c097f97e8153b14771b647f67373e6
-SHA1: 4367199a3db5151633d23f043c90ba0c3ba6864b
-SHA256: 94ed2530fb1704d60fdfddb6737615116dfde0c697f64d67cc05fa79922f86ee
-SHA512: fc24336732ed86e00c149ad0df87d6c189ce79cfaa5987a85ef4822034174fa4e4db7e39b71b4ea9a8f79b994b39753a46e01a30cc299c27564f60237985a602
+Size: 11733872
+MD5sum: 301baae8f03d46191c2e7c107dfe5080
+SHA1: f07e3b3d7ba2324df64b0156dd79214163417ce1
+SHA256: e4d14a8f90dd28649da16189db9e4051a2933281f16fca6c21ed763dee860380
+SHA512: 066a1560b2abf02cf8a48f39d90e2fcb102ee6499c8aa24366d151e7b64b1eb8e9fefdae72b0a128c4695ae1fc41ced42e86d23b309501882ed27453f08c8adb
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV toolkit built from source with -O3 -march=native (speed path)
  The vc4-toolkit stack rebuilt on the target board with speed as the only
