@@ -9,11 +9,11 @@ Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
 Recommends: vc4d
 Suggests: vc4top-dkms
 Filename: pool/main/v/vc4-query/vc4-query_1.0.0_arm64.deb
-Size: 9672
-MD5sum: 98e0488502b19b445916d83940e51380
-SHA1: 68a9b6165818d37681ece38365d194c7496778e6
-SHA256: 305d0559fdc94890e6d9dbe6884407280d00238f77aae014eba8cbf55c8526bf
-SHA512: c60b9c2382081d65c12ed40307b5d55e3349e38f5fc20d294081d068a52007a756548738e9e06e9801db993d155d5eb5fe6793af8d26755ea72397f2e153a79f
+Size: 9660
+MD5sum: 342a8c29adba7873dd19339433d0a3cf
+SHA1: 5229351e14ce1871f6bd7a87daf5393a40eef021
+SHA256: de09e14b1af413f285b848911a2730af5bb287d6e18bbe4684707621b681b133
+SHA512: 971b2a12d58f5bf81e966015608e0729103d98b8f87fc41f6b1d0ce1f2d2e4f5bf8d7b99e5b059224d81764513e2466015910ebe47e7d524eef88b8186296d6d
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV device query (the deviceQuery analogue)
  One command that reports the engine and daemon versions, the kernel, the
@@ -34,11 +34,11 @@ Maintainer: rughinnit <rughinnit@users.noreply.github.com>
 Installed-Size: 112
 Depends: libc6 (>= 2.38), vc4top (>= 1.0.5)
 Filename: pool/main/v/vc4-smi/vc4-smi_1.0.0_arm64.deb
-Size: 8812
-MD5sum: ca05bce0b057be2561b0dfa17d6e4620
-SHA1: 6d5476205ada8c7c2c51b90c5a4f9af4bf156884
-SHA256: 791ef4917badd9299847a944bd000fd6f349f196657d8dfb92dec0440f383df0
-SHA512: 9d8ec248f0c4ee398bdaa8e3b7564428d1289b35a862a3c61ff013d3d78da4dcada772eb5c7b1669c0e308dd9b385f706e38370578d9b84035c3ad2e958008b6
+Size: 8784
+MD5sum: 8e4b59aaaeb71b54fc9872ee28885b3c
+SHA1: a33322a4d3f117e418b143f538e225e0284d5c24
+SHA256: a8f7773072a5ee8e781692864e6ce886c3348acf438498646d0009a116a0f1fe
+SHA512: 8bb3847009be6a5b2af1dac75c9756699f4eb1743b54cbe7ac5449c5993d9705d5f7c9f868dd4482e432d1c3e1633b7c8ec257e77a2219886d6ae0421996481a
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: One-shot VideoCore IV status summary (the nvidia-smi analogue)
  Prints state, QPU utilisation, stock core/V3D clocks, temperature,
@@ -56,17 +56,17 @@ Version: 1.2.2
 Priority: optional
 Section: metapackages
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
-Installed-Size: 17676
+Installed-Size: 18360
 Provides: vc4-toolkit
 Depends: vc4d (>= 1.2.1), vc4infer-dev (>= 1.2.2), vc4-query (>= 1.0.0), vc4-smi (>= 1.0.0), vc4train (>= 1.0.0), vc4top (>= 1.0.5), vc4top-dkms (>= 1.0.5), python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
 Conflicts: vc4-toolkit, vc4infer
 Replaces: vc4-toolkit, vc4infer
 Filename: pool/main/v/vc4-toolkit-fast/vc4-toolkit-fast_1.2.2_arm64.deb
-Size: 11715204
-MD5sum: 799a77bc28cba6dff082b41af6e3de69
-SHA1: 5b58d58998c0341d010a3e096429e46276c89b2d
-SHA256: 73b610b56eda656130ee96bf8459f4966dbf406bd1bd5f10d9a79c9330f1fdef
-SHA512: 87c77b11faf9fc356679e08042b4ec1d47268e7e4e0a2749deac67fe73fe538a14f35bf3e8faba56c9ed1af85979c1729d7986f6ee56948390f79189dae4d8ef
+Size: 11726280
+MD5sum: b1c097f97e8153b14771b647f67373e6
+SHA1: 4367199a3db5151633d23f043c90ba0c3ba6864b
+SHA256: 94ed2530fb1704d60fdfddb6737615116dfde0c697f64d67cc05fa79922f86ee
+SHA512: fc24336732ed86e00c149ad0df87d6c189ce79cfaa5987a85ef4822034174fa4e4db7e39b71b4ea9a8f79b994b39753a46e01a30cc299c27564f60237985a602
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV toolkit built from source with -O3 -march=native (speed path)
  The vc4-toolkit stack rebuilt on the target board with speed as the only
@@ -95,10 +95,10 @@ Installed-Size: 28
 Depends: vc4d (>= 1.2.1), vc4infer (>= 1.2.2), vc4infer-dev (>= 1.2.2), vc4-query (>= 1.0.0), vc4-smi (>= 1.0.0), vc4train (>= 1.0.0), vc4top (>= 1.0.5), vc4top-dkms (>= 1.0.5)
 Filename: pool/main/v/vc4-toolkit/vc4-toolkit_1.2.2_arm64.deb
 Size: 2852
-MD5sum: d30b6426b30665c46c187ec1c7badb3b
-SHA1: 0266e6245b3c7e635397a56651c24e90ae4a9146
-SHA256: a8df34bbfe0b512ed8dc9f61aaa467392df01ccc23cbf27b21b5a029f9e374dd
-SHA512: c1ee32a893819bf8153a735c1357bc96c076598c18d9a1ff797f2fe43f31f95a79b438a696f56f90497db6083637cfb8a607b70bda76b695576531298f124014
+MD5sum: d3295d32276907449f8814ff4d29d3cf
+SHA1: 38147bb1dfad8432bc81a495e6d16263ab4a13f1
+SHA256: 0f2e1d32d86613d18a99ba7d8b32df18a0e2e7ab792c7f2169c54ccf5f834bfe
+SHA512: 969713c6905556871024c8538158686b51f38fef8f27e8881c496b5a770aba5a68080fea0010c5dac6ccbf77bc6d2809a77afbde6687e2fca3eadbacf1f88f4e
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV toolkit: daemon, engine, headers, query, monitor, trainer
  The single install command for the whole vc4-stack:
@@ -129,11 +129,11 @@ Depends: adduser
 Recommends: vc4infer
 Suggests: vc4top
 Filename: pool/main/v/vc4d/vc4d_1.2.1_arm64.deb
-Size: 30800
-MD5sum: c298cffaf8de13da09d10092ccb5e9cb
-SHA1: 476a3fab078e8dae1daef70a5ded20108fbb2eac
-SHA256: 337006fb1126637221976b575e40173d1f04e829f67d40e47616d3dbd19ebc47
-SHA512: cb0fde1fc8e9d2c5e90e7ec223b39883302fcb6f247d48c65c135f4629fba6c950cf17061f8aa895936825f509d4645656540f7a2f45b439dcbf3c663931da6e
+Size: 30804
+MD5sum: 4dfc98e075d9f11b0799f617fcb6152b
+SHA1: 7d99c61bf09e6a417c55010b3baab570cc0c5c6e
+SHA256: 44a937859e90f07615f3fd6ee23f2e19e86b305d42d3595b7bd2094c3bba670e
+SHA512: 72b47e6e16a800e995895956ab9ad22c064560e4ddff8d905573ad8f127e089a1eba1cdfb24e4292614806f31c4841881254a9695bd4fa0c73beca03afb9219a
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV QPU helper daemon (privileged half of the vc4 stack)
  vc4d owns /dev/mem and the V3D register window so the engine can run
@@ -153,11 +153,11 @@ Maintainer: rughinnit <rughinnit@users.noreply.github.com>
 Installed-Size: 88
 Depends: vc4infer (>= 1.2.2) | vc4-toolkit-fast (>= 1.2.2), libc6 (>= 2.38)
 Filename: pool/main/v/vc4infer-dev/vc4infer-dev_1.2.2_arm64.deb
-Size: 10288
-MD5sum: 7d6e8a5e8cd679435eb462cc92bc02eb
-SHA1: 8bba7a9c48f07d2768043e3c6f4aba5f709d1c99
-SHA256: b28cd44192ea94bd81d99b6df84cc18b0d02cfb5aa0351202cd3a99e3879a4e5
-SHA512: 298c7bc2258f9947d95ee92ec0c99e056a5a53edc3a2f0d498390b264620d407033ec8bde9d84b90e9157adba63f168e1d5a8f05dab1a083a887276045632623
+Size: 10284
+MD5sum: 205bdb095dfb7f9866b9d31748053b92
+SHA1: 5f59ec2c75aadc42c0b9dc22d34a86f517062a85
+SHA256: ce191ee560e5d2ae49a445a7a70e4fbd98a78af95bee279e702bedce40294ed7
+SHA512: 4d7bb674e920f08b2898a4c74aa8258c4e5e4a8c56a5345d941d463fd95113fd31ca6180d8067d13ebe914012b1d6dcb3bac9038435cf72115f72836523ed2d0
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Headers and build files for libvc4infer (VideoCore IV engine)
  Installs /usr/include/vc4infer.h, the libvc4infer.so linker symlink, a
@@ -179,11 +179,11 @@ Installed-Size: 14552
 Depends: python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
 Suggests: vc4d, vc4infer-dev, python3-onnxruntime
 Filename: pool/main/v/vc4infer/vc4infer_1.2.2_arm64.deb
-Size: 11685980
-MD5sum: 5dff1359c5843d5df8b02a41e0b3e4e0
-SHA1: 32312396660ad13e286493e065554ff1f02aaa56
-SHA256: 4fd95341f59ad9cc0b31937033cd0a97ebf23cd718b8ad17a0e710ce1269ecce
-SHA512: dfd5e9b3b61243fd9c0dafbf8dec0da22fed26f527fa66a969e7051b0e28c9a2b38c51f182d0c53e8d296232acc2be05a5027ba09aeaa48eb4383ba076108038
+Size: 11686672
+MD5sum: 18aaedf74d13cc9bc18c45be64bc39dc
+SHA1: cf85317dbdc77f12935fd19c7934533af68bc3f4
+SHA256: a97d76437d6d9768e6171c404f944178d57389fe2fa71fa02b5e9c025795413f
+SHA512: 740a0f6f49c4eaf8746fd6c9ab902fb7577887f8b050a9c5b9314f34c7c6aa9dc154f65eb1af9b3b131c7435cc988a63cbb18329827c88fc85e1b43d886224b7
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: ONNX inference on the Raspberry Pi VideoCore IV QPUs
  vc4infer executes fixed-shape fp32 ONNX graphs on the VideoCore IV (V3D) QPUs
@@ -269,11 +269,11 @@ Installed-Size: 124
 Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
 Recommends: vc4d
 Filename: pool/main/v/vc4train/vc4train_1.0.0_arm64.deb
-Size: 10844
-MD5sum: ed8b6ccb54cda0342c473eda913dbaee
-SHA1: 0bdd01a00deae17b97a6958060f973f470634bef
-SHA256: 7f07eb8d840037108b9de633fc6932e81b2e976be91460d65d2a6b7fa37dcfa3
-SHA512: 27d8418d381bdf763726663524c6180db07f7d06d5fe83d8e655615073ba967f670506b565f783de3ea062f40ed480395a383c4fdf2b26c4e2f324e234698ec7
+Size: 10868
+MD5sum: 9dcf05b31dedb2d1b354954638388862
+SHA1: 10b9865a2d2fcf3929446a16956d43a378b74ff3
+SHA256: 7b5687b0a08a7149a6ec2af3f005881029827edc27635004e9c28046ca80b7cd
+SHA512: 3764219906a7681f2e5bb15160ee8ff62829909d437dd257083a88e74cca6e67d5743e36142a97db49158ab54bb96b6b0c215b88fcd5f7e626aad3233a7fdf85
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Toy QPU trainer demo (MLP 64-32-10) that proves the engine can train
  Installs the engine's own training demo: a two-layer MLP trained full
