@@ -129,11 +129,11 @@ Depends: adduser
 Recommends: vc4infer
 Suggests: vc4top
 Filename: pool/main/v/vc4d/vc4d_1.2.1_arm64.deb
-Size: 30804
-MD5sum: 4dfc98e075d9f11b0799f617fcb6152b
-SHA1: 7d99c61bf09e6a417c55010b3baab570cc0c5c6e
-SHA256: 44a937859e90f07615f3fd6ee23f2e19e86b305d42d3595b7bd2094c3bba670e
-SHA512: 72b47e6e16a800e995895956ab9ad22c064560e4ddff8d905573ad8f127e089a1eba1cdfb24e4292614806f31c4841881254a9695bd4fa0c73beca03afb9219a
+Size: 30900
+MD5sum: cf3f1d2b91a25c200982d1de21b25d2a
+SHA1: 728c98903c219c729dfdfdaec00826e2d0d6161e
+SHA256: ded1b6fcdc638a4b0bdd89452d1480aec94968bad5735378dd19d245e7b282b5
+SHA512: e62e4882c98949e23bfd1ab58a7ef9d8fa583dca6f295f2c1a65ff75fd972ece40bead56ef0e41fa0224d08c882de192ef81f78ecd98ddfe178587eb9c5ff1b1
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV QPU helper daemon (privileged half of the vc4 stack)
  vc4d owns /dev/mem and the V3D register window so the engine can run

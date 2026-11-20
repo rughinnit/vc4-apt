@@ -1,4 +1,4 @@
-44a937859e90f07615f3fd6ee23f2e19e86b305d42d3595b7bd2094c3bba670e  pool/main/v/vc4d/vc4d_1.2.1_arm64.deb
+ded1b6fcdc638a4b0bdd89452d1480aec94968bad5735378dd19d245e7b282b5  pool/main/v/vc4d/vc4d_1.2.1_arm64.deb
 ce191ee560e5d2ae49a445a7a70e4fbd98a78af95bee279e702bedce40294ed7  pool/main/v/vc4infer-dev/vc4infer-dev_1.2.2_arm64.deb
 2ad800d5021a23a456a6b9fc131c002a718fe16dd85a8d9e1a54b976878f55c0  pool/main/v/vc4infer/vc4infer_1.2.2_arm64.deb
 de09e14b1af413f285b848911a2730af5bb287d6e18bbe4684707621b681b133  pool/main/v/vc4-query/vc4-query_1.0.0_arm64.deb
