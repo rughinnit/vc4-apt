@@ -153,11 +153,11 @@ Maintainer: rughinnit <rughinnit@users.noreply.github.com>
 Installed-Size: 88
 Depends: vc4infer (>= 1.2.2) | vc4-toolkit-fast (>= 1.2.2), libc6 (>= 2.38)
 Filename: pool/main/v/vc4infer-dev/vc4infer-dev_1.2.2_arm64.deb
-Size: 10256
-MD5sum: dfc64b922c8d70fb69bc5f1b13b33843
-SHA1: 7202506dbf5f7130f32f41aa0782f629826b752d
-SHA256: cbe510ab2eb63edc8c5fc22879c289e02f72bf3ed9147b8989407f79d3c5ec7c
-SHA512: 305c65047eae6854c893d6da6ec3576f232915234d181e07ba0a1f920e8a22c7f8af4567acb7c01f183fbb185b0f444d11e5d42cee2998510d40435a47ffa0da
+Size: 10288
+MD5sum: 7d6e8a5e8cd679435eb462cc92bc02eb
+SHA1: 8bba7a9c48f07d2768043e3c6f4aba5f709d1c99
+SHA256: b28cd44192ea94bd81d99b6df84cc18b0d02cfb5aa0351202cd3a99e3879a4e5
+SHA512: 298c7bc2258f9947d95ee92ec0c99e056a5a53edc3a2f0d498390b264620d407033ec8bde9d84b90e9157adba63f168e1d5a8f05dab1a083a887276045632623
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Headers and build files for libvc4infer (VideoCore IV engine)
  Installs /usr/include/vc4infer.h, the libvc4infer.so linker symlink, a
@@ -265,15 +265,15 @@ Version: 1.0.0
 Priority: optional
 Section: utils
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
-Installed-Size: 112
+Installed-Size: 124
 Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
 Recommends: vc4d
 Filename: pool/main/v/vc4train/vc4train_1.0.0_arm64.deb
-Size: 10748
-MD5sum: 1861e27f3497f15e915a4f5ba80a656e
-SHA1: 63a563f96058f7666e532d15868741945f1a1a25
-SHA256: fc4f37f0dd867f0a104ac309d1b46f9b8ba5ac8edf0f06977678c686a30e089d
-SHA512: f2ad12e83875f0f26b682b0d36f535832c7f428bdcad2472761198b1228fbdb26c886de612f4613bbbab7cdccfbb33eac93cca7f3579ba52d4bdb15456c42779
+Size: 10844
+MD5sum: ed8b6ccb54cda0342c473eda913dbaee
+SHA1: 0bdd01a00deae17b97a6958060f973f470634bef
+SHA256: 7f07eb8d840037108b9de633fc6932e81b2e976be91460d65d2a6b7fa37dcfa3
+SHA512: 27d8418d381bdf763726663524c6180db07f7d06d5fe83d8e655615073ba967f670506b565f783de3ea062f40ed480395a383c4fdf2b26c4e2f324e234698ec7
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Toy QPU trainer demo (MLP 64-32-10) that proves the engine can train
  Installs the engine's own training demo: a two-layer MLP trained full
