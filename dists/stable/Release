@@ -1,20 +1,20 @@
 Architectures: arm64
 Codename: stable
 Components: main
-Date: Fri, 20 Nov 2026 00:23:23 +0000
-Description: VideoCore IV packages (vc4top telemetry, vc4infer ONNX inference)
+Date: Fri, 20 Nov 2026 01:36:15 +0000
+Description: VideoCore IV stack: vc4d, vc4infer, vc4-query, vc4-smi, vc4train, vc4top
 Label: vc4top
 Origin: vc4top
 Suite: stable
 MD5Sum:
- 37c0f3e34577bb3025337a185861e6e2             4426 main/binary-arm64/Packages
- 723867c51439e0b13645c74f7b8f678b             2249 main/binary-arm64/Packages.gz
+ 6988faf1d9b4f02951bf12921b82fe82            13867 main/binary-arm64/Packages
+ 80ac17ff1511fb750fc7aedb68c4b822             5730 main/binary-arm64/Packages.gz
 SHA1:
- 030627abf1f59ff31612abe60dec0b0fe7ce6937             4426 main/binary-arm64/Packages
- b77edd3c6f4274efed78efaa34fc0352f1ffe4ae             2249 main/binary-arm64/Packages.gz
+ cc9b079d3d8052399599f2f4b140dbbbd05e103e            13867 main/binary-arm64/Packages
+ 9048e4c0c97e30b445d88af5d30c696cc8a96796             5730 main/binary-arm64/Packages.gz
 SHA256:
- 8b269c84bea8d061b63e09f5d72bfbd27c06b594e6c530c39527437e79334a0a             4426 main/binary-arm64/Packages
- 9f78874414017d5eab45b3bf907b5e867dabd0980c93dfbf00d0f9750a54d3ca             2249 main/binary-arm64/Packages.gz
+ 00cde41a46dbd6049f42d3aa8bd08a90de5b8b345f20ca24ad4c804825b77215            13867 main/binary-arm64/Packages
+ 0ed95b5ef6739865f9b2b9e5c32c8da17c0ff5c8ac95f33206ae954b28e2f0aa             5730 main/binary-arm64/Packages.gz
 SHA512:
- 57bcc536e89b0eba5a3dba2e90832f2280bf2bb9e7bae64006cf1493d2f87181389bcb1c4a319274945a761663a99e180acbe5b9cad3f786c5bd9174c1a94ddc             4426 main/binary-arm64/Packages
- 8fbe59bd67bd10fbd322b0fc13d58b22c7b53066b6ef6a1aad58dc9a76619fae11c41028bc1eefd277c12bfe7e164199640126059b132bc135f40aac618eb2a8             2249 main/binary-arm64/Packages.gz
+ b0cbb0c4fba61890c1a379858f4600286df4debfa7d68dc6c6ca04fe43ca5555e1cd74fb25c75ed8466ac0040f498a5b4dec15f09c56b8f90483e33bb8b4e3ca            13867 main/binary-arm64/Packages
+ 954d7f07e3218edd2a316d204984cac0aca35d4a93279a690820606b874a07279824896b022c4289168a35db792903434284c45aade55395a4f674a2cea4a28f             5730 main/binary-arm64/Packages.gz
