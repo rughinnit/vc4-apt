@@ -4,36 +4,36 @@ Hash: SHA512
 Architectures: arm64
 Codename: stable
 Components: main
-Date: Fri, 20 Nov 2026 10:41:35 +0000
+Date: Fri, 20 Nov 2026 11:00:35 +0000
 Description: VideoCore IV stack: vc4d, vc4infer, vc4-query, vc4-smi, vc4train, vc4top
 Label: vc4top
 Origin: vc4top
 Suite: stable
 MD5Sum:
- 96c82731585f787e8e099e53d4853b18            20948 main/binary-arm64/Packages
- 26ed3a02788c007b5cb9dc55a2f22314             6799 main/binary-arm64/Packages.gz
+ eab19f8d534bd4b9dad4d2eb5bf9115d            20948 main/binary-arm64/Packages
+ a8f770d712457ddd2b256664495cca7b             6798 main/binary-arm64/Packages.gz
 SHA1:
- 727a19617bcb6621d207034f74555378027f9624            20948 main/binary-arm64/Packages
- 05b2bddad259204d9f060f602b31e84e4a02786f             6799 main/binary-arm64/Packages.gz
+ 38bfd963832265b26210dfbdac476fefe85c5b97            20948 main/binary-arm64/Packages
+ fc71bc54191283d892c036dbea3bc1ad9bae3f53             6798 main/binary-arm64/Packages.gz
 SHA256:
- 87e9be19fe6c42acc6864a442d93850ffe7e707c0c60fa520f52488f05cf772d            20948 main/binary-arm64/Packages
- 57912ef5980f62ccbf64721b00c8ddacde5d76644b24386f5aa95b78738bc17c             6799 main/binary-arm64/Packages.gz
+ 56134a4faeab740f3a13c2fcf98eeed84108fd26f249ff230381cc4627fa31b5            20948 main/binary-arm64/Packages
+ 9b6c41035d295fa75ff0395390cf55efcda4eb8a36f3f9cef43183c938c82d55             6798 main/binary-arm64/Packages.gz
 SHA512:
- c3f95007695bd4f4725e0c9e11b09f1bdb1a8f226e2f76c05c49985aae54d3778e7529b076e7bc502675d945442eacd1c6368458238f114778a193ac74d21999            20948 main/binary-arm64/Packages
- ced88bdb9964fbfa4a0ce1f7495a382ca24482284a7f3ed442efbc6c5a0230c41f73222395977ce7a8273130a3b3d94695c0f494ab2023168ba81ecb81a431c2             6799 main/binary-arm64/Packages.gz
+ 1eea2724eca19d8a9e8c754f4f5ba7df2e4889461b6b062d49fc3004d0935583a62b38d83472b3bd6fc8f403969b05df33cd26956b52dbf1ffea1361683fb55b            20948 main/binary-arm64/Packages
+ 392f33bb09cb3111ddff420652689cfe17b0817d44b538b6d02730320003d6d2d69faa24a3eb25c6731957e776ba9d490b4222e0ccf063941d64706a65ac6433             6798 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE5Ms7oFjaqyvmDvXWtza7mki5QQgFAmsAI+AACgkQtza7mki5
-QQherBAArcEx3PR8FuJv+Y7ONzP5oLHKg5QX04HmsI77pyBoYQYsuWM0hPmmegeH
-bdSu301IegbMJey6BntpVKIiRxMoSBhOknXiJOwujxaLWtweGJ1qxtxKCcG6Gk3s
-hRt4FuvXZvrtX06mbb4YQI3PyXjJGRxepygveit7/yEgiGraunXdr6roqMN8gEOR
-kQ5UvYvBdWKId68g7NDapsC+uTUloeAthmWyF4JDwBfGBcnYPgQZNtPfvj/fSOok
-d3YIfuyHwYinjRr5s5q7ilnnUzQ3ln7yNyQft/CuX0isPtymQlKwsbK7/89d7jxf
-r/LE1ANFBi02sSmUPESrTbwKU9gqPkdp60iBDK8wo01Hgdh2Q4UTKlUd5njsT+19
-wKU6Q5ryzQHYyH5LEg9TtjVxrF8o3ZT+20oEhAO238SrScXiDCtPpg3rZw5XTFb7
-dyyG+lL/FC2J0DOJgj1YTuuOQ94KdEDP0zhFXVN4/c6XHC1vfruym6nJAYlwOVv1
-GWFtL7GjoGr8BpqN4cGQw8w40FkBjeZW3eo1ap3PVhlsp1YOFHvSLoMjyLK5PLDU
-gMw3YHOJFQ7NbCtLVF6lMTRGr+lGUXeRa3wdiEcburiyJlUMVu+21DVuCjLk2o2W
-cf0U8riZISV2slfx0z8SCG7QvZlzi1p+QnWIgURP04nDxIzzLPg=
-=Bovs
+iQIzBAEBCgAdFiEE5Ms7oFjaqyvmDvXWtza7mki5QQgFAmsAKFQACgkQtza7mki5
+QQgx1xAAtzUSyjqfLJrD+e04/L4Ao1WbFj6hKbTCF3NBlzgYc9wE9jY4AcW58GOq
+f2TeUekfkBk2glkJS/07GoVq9d/Kkzcyj86C3WEcU11UEwIRZQAMAtRC8p92Cucm
+uUEyrS2m/0Litn+0+0wArvg1GZ4Ms2vovK8TDQZRvpy2hK6ZuHLq0dX+q0DOoxk1
+b+miXCjk7UfTA8+q4woV9TOVQMvYtrlI0qQAr+H8PlNh2lK4zsq9YZbj+hiNS8Ga
+GZ2aS8wvvkaQwyiGxu0Pi/m+IUSZAMWEQ8ZCRoVLjO0b5z1Eepc0pb/OmYHBSnih
+mTOf36ghopJjQfn5uD7aNY3gzwvlhXP72JKQGMWzCHXY5djMM97KH7h9Hc/3TvYt
+PlOWDGD6MA5V6a5hDajJeb7t1nejCJAUuPaKK1Z3GqBCsTN7L1dnOgSZC6AhX1bF
+2ABG2XQ3IsMBcBy02RCTGk9xqfGZwioG/tw/nwuEKl2wjUB6oOTcGvzPrEqV/8hJ
+lzYEch1jLSHO1xZTT1pC5q7M2MEUxDH1bbDD02kFj1turFaLU1VZnPzwqqsYl0T0
+ipLk3kQ5w57GugTZ3WqYyPbB4uQ/xT1yNKXTEolh0rm7Ba/l+gO14/BdXQQt8Qvj
+Vous4y3XyWdk1WxhZXuxi/Zdcu1krbsoDjEESl1nWlxYKZIGirc=
+=OHlp
 -----END PGP SIGNATURE-----
