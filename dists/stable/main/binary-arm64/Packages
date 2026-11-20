@@ -85,6 +85,41 @@ Description: VideoCore IV toolkit built from source with -O3 -march=native (spee
   400 MHz / V3D 300 MHz.  See /usr/share/doc/vc4-toolkit-fast/README.md for the
   measured difference against the -O2 package.
 
+Package: vc4-toolkit-fast
+Architecture: arm64
+Version: 1.2.3
+Priority: optional
+Section: metapackages
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 16068
+Provides: vc4-toolkit
+Depends: vc4d (>= 1.2.1), vc4infer-dev (>= 1.2.3), vc4-query (>= 1.0.0), vc4-smi (>= 1.0.0), vc4train (>= 1.0.0), vc4top (>= 1.0.5), vc4top-dkms (>= 1.0.5), python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
+Conflicts: vc4-toolkit, vc4infer
+Replaces: vc4-toolkit, vc4infer
+Filename: pool/main/v/vc4-toolkit-fast/vc4-toolkit-fast_1.2.3_arm64.deb
+Size: 11734916
+MD5sum: dfe944a16a56cd891e7b12e0c72fbd66
+SHA1: 72978ee9f903ccc3c3fed174c996dd1e8a9eda82
+SHA256: 6e9853be3b6ee78bbd303f51e5a8f920dd43362b1c3ffde7b515cf70fa2e4ecf
+SHA512: 8b796ba7b2ee0d01ee366813a64ab2e9fb07d6011fbbdb13f73672ef6e070da2d6d96b8e7c0115558e9980e9129db9ddaa11b695199c532d8cb0e9578b108a6e
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: VideoCore IV toolkit built from source with -O3 -march=native (speed path)
+ The vc4-toolkit stack rebuilt on the target board with speed as the only
+ objective:
+  .
+   * the engine compiled with -O3 -march=native -mtune=native -fno-plt (the
+     standard package is -O2); the static archive is also built with LTO and
+     the tests are run against it
+   * /usr/lib/vc4infer/kcache prewarmed at package build time with every kernel
+     blob the bundled models need, stamped and read-only, so a first run does
+     not JIT
+   * a vc4d drop-in with --arena-mb 150 and --max-timeout-ms 60000 (the 320x320
+     recipe), toggled by vc4fast on|off|status
+  .
+  No clock, governor or voltage is changed: the board stays at stock core
+  400 MHz / V3D 300 MHz.  See /usr/share/doc/vc4-toolkit-fast/README.md for the
+  measured difference against the -O2 package.
+
 Package: vc4-toolkit
 Architecture: arm64
 Version: 1.2.2
@@ -99,6 +134,39 @@ MD5sum: d3295d32276907449f8814ff4d29d3cf
 SHA1: 38147bb1dfad8432bc81a495e6d16263ab4a13f1
 SHA256: 0f2e1d32d86613d18a99ba7d8b32df18a0e2e7ab792c7f2169c54ccf5f834bfe
 SHA512: 969713c6905556871024c8538158686b51f38fef8f27e8881c496b5a770aba5a68080fea0010c5dac6ccbf77bc6d2809a77afbde6687e2fca3eadbacf1f88f4e
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: VideoCore IV toolkit: daemon, engine, headers, query, monitor, trainer
+ The single install command for the whole vc4-stack:
+  .
+    vc4d          privileged helper (socket in /run, vc4 group)
+    vc4infer      engine, Python API and CLI (inference)
+    vc4infer-dev  header, pkg-config and CMake package
+    vc4-query     the deviceQuery analogue
+    vc4-smi       the nvidia-smi analogue
+    vc4train      the engine's own training demo
+    vc4top        realtime QPU telemetry
+    vc4top-dkms   the read-only V3D register/counter module
+  .
+  Everything runs on the QPUs at stock clocks (core 400 MHz / V3D 300 MHz);
+  nothing in this stack changes a clock or a voltage.
+  .
+  Install vc4-toolkit-fast instead for the same stack rebuilt from source with
+  -O3 -march=native and a prewarmed kernel cache.
+
+Package: vc4-toolkit
+Architecture: arm64
+Version: 1.2.3
+Priority: optional
+Section: metapackages
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 28
+Depends: vc4d (>= 1.2.1), vc4infer (>= 1.2.3), vc4infer-dev (>= 1.2.3), vc4-query (>= 1.0.0), vc4-smi (>= 1.0.0), vc4train (>= 1.0.0), vc4top (>= 1.0.5), vc4top-dkms (>= 1.0.5)
+Filename: pool/main/v/vc4-toolkit/vc4-toolkit_1.2.3_arm64.deb
+Size: 2856
+MD5sum: c98ac91def1a70e34729d6d77bc0b945
+SHA1: 82f525e19dd00e896be110e431e773356495c208
+SHA256: 4d0f54f484af33129ff0c1bd06a57433c4acf621e7590b627ae09938113b5fee
+SHA512: 13253ed65b8b7dfd9bd277f31cb87c73e0dbb49d483baa7caa242e87cf505c430b4a0520eaa91855a1703c6a5eef7b2e534dd98f2588d15711ced014d82f06f9
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV toolkit: daemon, engine, headers, query, monitor, trainer
  The single install command for the whole vc4-stack:
@@ -158,6 +226,31 @@ MD5sum: 205bdb095dfb7f9866b9d31748053b92
 SHA1: 5f59ec2c75aadc42c0b9dc22d34a86f517062a85
 SHA256: ce191ee560e5d2ae49a445a7a70e4fbd98a78af95bee279e702bedce40294ed7
 SHA512: 4d7bb674e920f08b2898a4c74aa8258c4e5e4a8c56a5345d941d463fd95113fd31ca6180d8067d13ebe914012b1d6dcb3bac9038435cf72115f72836523ed2d0
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: Headers and build files for libvc4infer (VideoCore IV engine)
+ Installs /usr/include/vc4infer.h, the libvc4infer.so linker symlink, a
+ pkg-config file and a CMake package so C clients can build against the engine:
+  .
+    pkg-config --cflags --libs vc4infer
+    find_package(vc4infer 1.2 REQUIRED)
+  .
+  The runtime library itself comes from vc4infer (or from vc4-toolkit-fast,
+  which ships an -O3 rebuild under the same soname).
+
+Package: vc4infer-dev
+Architecture: arm64
+Version: 1.2.3
+Priority: optional
+Section: libdevel
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 104
+Depends: vc4infer (>= 1.2.3) | vc4-toolkit-fast (>= 1.2.3), libc6 (>= 2.38)
+Filename: pool/main/v/vc4infer-dev/vc4infer-dev_1.2.3_arm64.deb
+Size: 13788
+MD5sum: dab60121a5ee31b29a82fe5a46e192a4
+SHA1: 1f090eb047f3070a56bcfdb8f419c861d9666a13
+SHA256: 76f1a7e6721f105983bad22a2b59a54cba4946f964df8b160cc0af8502611acb
+SHA512: 2199708f6b9a44c437c273118cff21572d504770ee9ef4ecf34cb5518f556c9470dd5c11da2ac44888bef0c9f03dbb61c93139fd2cf8f5e38e9b7b283956ae4f
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Headers and build files for libvc4infer (VideoCore IV engine)
  Installs /usr/include/vc4infer.h, the libvc4infer.so linker symlink, a
