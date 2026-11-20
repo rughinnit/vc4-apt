@@ -1,7 +1,7 @@
-d8d17b26fe4439a9f7718496ab6931a0ba8b9843f243129402b9a5f8934a8f32  pool/main/v/vc4d/vc4d_1.2.4_arm64.deb
+c88b83aa458a3ec93962d25f1c22f30bedfe6f8892efb061eaab8b9146ee72b3  pool/main/v/vc4d/vc4d_1.2.5_arm64.deb
 ce191ee560e5d2ae49a445a7a70e4fbd98a78af95bee279e702bedce40294ed7  pool/main/v/vc4infer-dev/vc4infer-dev_1.2.2_arm64.deb
 76f1a7e6721f105983bad22a2b59a54cba4946f964df8b160cc0af8502611acb  pool/main/v/vc4infer-dev/vc4infer-dev_1.2.3_arm64.deb
-3a04d0338a68d4dbb69c9dacd1f91b8217bb85b5f50ad1683554f108745b2853  pool/main/v/vc4infer/vc4infer_1.2.5_arm64.deb
+142370343dd5ab1d91d03096f927de2de4b2d7143c9412dee830935ebd425da7  pool/main/v/vc4infer/vc4infer_1.2.6_arm64.deb
 de09e14b1af413f285b848911a2730af5bb287d6e18bbe4684707621b681b133  pool/main/v/vc4-query/vc4-query_1.0.0_arm64.deb
 64964a84ac7c1461583e652f7965e1376dac5d2aac79303bc2fe7fbd104a9671  pool/main/v/vc4-query/vc4-query_1.0.1_arm64.deb
 02b8a83224286afb80de01047e8e235b2725269bf76b201612355fbe4ba91c11  pool/main/v/vc4-query/vc4-query_1.0.2_arm64.deb
@@ -16,5 +16,6 @@ a8f7773072a5ee8e781692864e6ce886c3348acf438498646d0009a116a0f1fe  pool/main/v/vc
 9fdc000e215f6192d5de7164d7caee84433fa52876515a92a33b7b9f8c9e3759  pip/torch_vc4-0.3.0-cp313-cp313-linux_aarch64.whl
 d3b902052f776ecb300cab4864c7950bcde8a8dc66875e3a4c79d837e6a84be3  pip/vc4infer-1.2.4-py3-none-any.whl
 b52b125684cb1b51f247992e4cff5070f9cd1f01beeb34a6dc8bd363bd4c5e5d  pip/vc4infer-1.2.5-py3-none-any.whl
+740406eaf6b99455585124f16d7a3eef6e5d28325b48fb9c1bb8f7e9732033a7  pip/vc4infer-1.2.6-py3-none-any.whl
 def776ca42cc25e6a96423f2b0e82581f2178147601291f2d158b77f906f5108  key.asc
 de7bf5ab4f8590b1250cb304bd68f60650c11b3a80291546dd212a462ca141eb  vc4top-archive-keyring.gpg
