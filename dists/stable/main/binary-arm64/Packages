@@ -9,11 +9,11 @@ Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
 Recommends: vc4d
 Suggests: vc4top-dkms
 Filename: pool/main/v/vc4-query/vc4-query_1.0.0_arm64.deb
-Size: 9628
-MD5sum: 306a485efb35a4d87f1e6f181440bd2e
-SHA1: a9da99a6bceea3cc565b44218c11d05b61fe3df0
-SHA256: 31a31d081d1883067e230b994e82f881eff372550dced87fecf1893d714fd198
-SHA512: ba53fb8ca098f86f0758f4328b579e710a7662f9166aa58ee2801bfdd695717889b7b82160abb61ea116670302bd37da95c5e988277fc885169bac3652d78425
+Size: 9672
+MD5sum: 98e0488502b19b445916d83940e51380
+SHA1: 68a9b6165818d37681ece38365d194c7496778e6
+SHA256: 305d0559fdc94890e6d9dbe6884407280d00238f77aae014eba8cbf55c8526bf
+SHA512: c60b9c2382081d65c12ed40307b5d55e3349e38f5fc20d294081d068a52007a756548738e9e06e9801db993d155d5eb5fe6793af8d26755ea72397f2e153a79f
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV device query (the deviceQuery analogue)
  One command that reports the engine and daemon versions, the kernel, the
@@ -34,11 +34,11 @@ Maintainer: rughinnit <rughinnit@users.noreply.github.com>
 Installed-Size: 112
 Depends: libc6 (>= 2.38), vc4top (>= 1.0.5)
 Filename: pool/main/v/vc4-smi/vc4-smi_1.0.0_arm64.deb
-Size: 8808
-MD5sum: 405b482d54cbed3f7e2248c59eafbb25
-SHA1: 36c06bdeeb2de6085bf24625687aa922ce69a80d
-SHA256: 3a1c88988d5a9899c7b049b1a45b1287892603ad1b19476f5eaa2602fc7a55a3
-SHA512: d0ff17e6763fc831b6221c9b06ea3753328bea93c7048b097a73173dc5a379d819af000b3eee10348bb6c76a949c69f9343a8d7e577476ce9c2a9db5dc54ab95
+Size: 8812
+MD5sum: ca05bce0b057be2561b0dfa17d6e4620
+SHA1: 6d5476205ada8c7c2c51b90c5a4f9af4bf156884
+SHA256: 791ef4917badd9299847a944bd000fd6f349f196657d8dfb92dec0440f383df0
+SHA512: 9d8ec248f0c4ee398bdaa8e3b7564428d1289b35a862a3c61ff013d3d78da4dcada772eb5c7b1669c0e308dd9b385f706e38370578d9b84035c3ad2e958008b6
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: One-shot VideoCore IV status summary (the nvidia-smi analogue)
  Prints state, QPU utilisation, stock core/V3D clocks, temperature,
