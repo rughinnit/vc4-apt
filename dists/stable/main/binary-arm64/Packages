@@ -242,7 +242,7 @@ Description: VideoCore IV toolkit: daemon, engine, headers, query, monitor, trai
 
 Package: vc4d
 Architecture: arm64
-Version: 1.2.7
+Version: 1.2.8
 Priority: optional
 Section: admin
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
@@ -250,12 +250,12 @@ Installed-Size: 140
 Depends: adduser
 Recommends: vc4infer
 Suggests: vc4top
-Filename: pool/main/v/vc4d/vc4d_1.2.7_arm64.deb
+Filename: pool/main/v/vc4d/vc4d_1.2.8_arm64.deb
 Size: 36696
-MD5sum: 079243d4255dcda220b94750aa3a2640
-SHA1: a54b7826a1dec3f8b96d789d6efa330eecf21887
-SHA256: ac9b4b22c937d33ee759d1d7f41e578babdaa76fa2e4e2a8c7d42ce80aafd82a
-SHA512: ddfbeda6f910f1f52c4c5dbde29bd60a049ee4ed7818747744da02ac4817c5577c7dbd6e4085899eea76a5f643d55c593731bf401dfe775290ec443ec564ff39
+MD5sum: 095452019956b12136759c04a19be7d2
+SHA1: 3a36a068acd2b2523769b8694a7b95f699469539
+SHA256: 53e0882cc46723ab8f704c7d603d47a10b1d7bd16f878d3e4d172c712a7b46ee
+SHA512: 79ce7ed91110b5af2cb5cc6b89a1b9473902c66b217a530911430cc1f32a6a97d7b33e6058c2edfce34dc1bc46ddd6e306f317b5d377666a2fe0007507236a6c
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV QPU helper daemon (privileged half of the vc4 stack)
  vc4d owns /dev/mem and the V3D register window so the engine can run
