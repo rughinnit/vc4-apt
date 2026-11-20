@@ -1,20 +1,20 @@
 Architectures: arm64
 Codename: stable
 Components: main
-Date: Fri, 20 Nov 2026 06:46:14 +0000
+Date: Fri, 20 Nov 2026 07:04:55 +0000
 Description: VideoCore IV packages (vc4top telemetry, vc4infer ONNX inference)
 Label: vc4top
 Origin: vc4top
 Suite: stable
 MD5Sum:
- 8da7a37ecd496a68c7db5d2c74872141            18414 main/binary-arm64/Packages
- cfb40b07793e683141181de4d5b6cd1e             6403 main/binary-arm64/Packages.gz
+ 025bd0abbda87b40e3161bd81962676d            19681 main/binary-arm64/Packages
+ b06f117ee4367f77bd9085571a3d93be             6591 main/binary-arm64/Packages.gz
 SHA1:
- 961332b0256ac956bdb873d67d439e80a3693425            18414 main/binary-arm64/Packages
- 3129bcf59f02b1c825b7dc4bb18c68259028383b             6403 main/binary-arm64/Packages.gz
+ 09df378fe14300d7f2e48c83be045803efba9dde            19681 main/binary-arm64/Packages
+ eba7b4061325672a7622dc49c86979c5f5bd0c7c             6591 main/binary-arm64/Packages.gz
 SHA256:
- 40d98aa16febb053c1b6c99d5a569587d8700ebe38483575bf88ad93ae689bee            18414 main/binary-arm64/Packages
- f951d761140fd72180fcf8ec30317c2a583d9c2ba502415db23df2a13c8727d6             6403 main/binary-arm64/Packages.gz
+ bf0270a3d11efc0b54b6d1fe1a6f7e4bb401a3d752c8705847648d0d0240b025            19681 main/binary-arm64/Packages
+ 87d55db89a5c17301bff0d127f1630e04bfaa7ed9bde77eda0570897723af11e             6591 main/binary-arm64/Packages.gz
 SHA512:
- 6a09bb36637dfa808653ef0a12ec320d72b78c3c89ef2569d497a2e73c24071459687d827e7599d4d6e735770bc7d83bb42941ee96acb06c8bf3e6394c829cd6            18414 main/binary-arm64/Packages
- 652ff37f5d4a16643406e88149fc5c71a1c9e60fdbff15847603bb99faec1c82b5484afe67326264f368765f88a3265907ed0b03eedecd5e9abca24c3192d7dc             6403 main/binary-arm64/Packages.gz
+ 01ed496ac75c119f8027049ce46ce66e0651a5341d57dd994e9ca08dd9a0b4ba54065f8f55d5979f3734bb08306c7ee66aceefabc6f888abf21e5bf83eaef17b            19681 main/binary-arm64/Packages
+ 3f069dc87f1e8cc0e668c1e3f3db5fdd68fafaf3fe3b56734ad1110d250ae146c19d073e58278a901f50fc6131e19bdf8ebdca2013eb116197791943190c2f0b             6591 main/binary-arm64/Packages.gz

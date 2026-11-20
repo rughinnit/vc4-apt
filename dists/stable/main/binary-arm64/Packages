@@ -25,6 +25,33 @@ Description: VideoCore IV device query (the deviceQuery analogue)
   It reads /sys/kernel/vc4mon (vc4top's read-only module) and vcgencmd; it
   never opens /dev/mem.  Use --json for machine-readable output.
 
+Package: vc4-query
+Architecture: arm64
+Version: 1.0.1
+Priority: optional
+Section: utils
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 112
+Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
+Recommends: vc4d
+Suggests: vc4top-dkms
+Filename: pool/main/v/vc4-query/vc4-query_1.0.1_arm64.deb
+Size: 9652
+MD5sum: a79fcb0aa76f0926cde17d02ac0898bb
+SHA1: 907e67f2039f855815c36a578b5e107db2a6be6d
+SHA256: 64964a84ac7c1461583e652f7965e1376dac5d2aac79303bc2fe7fbd104a9671
+SHA512: af9692764f37d0a92b4bef129016d979a055c88bcafcbca10c6ed8cb2265ba5c0d4d05d190fdfcd74a054403c6693ddab2d829f1b698efd6461bd706335bb7b7
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: VideoCore IV device query (the deviceQuery analogue)
+ One command that reports the engine and daemon versions, the kernel, the
+ V3D revision and QPU count, the stock core/V3D clocks, die temperature, the
+ throttle register, CMA total/free, the daemon arena size, the op registry
+ counts, whether the installed engine carries the training/backward kernels,
+ the system kernel cache, and the installed vc4 package versions.
+  .
+  It reads /sys/kernel/vc4mon (vc4top's read-only module) and vcgencmd; it
+  never opens /dev/mem.  Use --json for machine-readable output.
+
 Package: vc4-smi
 Architecture: arm64
 Version: 1.0.0
