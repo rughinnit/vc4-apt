@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>vc4-apt wheels</title></head><body>
-<h1>VideoCore IV wheels</h1>
-<p>Pure-Python packages for the VideoCore IV QPU stack.  The engine library (<code>libvc4infer.so.1</code>) and the daemon come from the apt repository.</p>
-<ul>
-<li><a href="vc4infer-1.2.1-py3-none-any.whl">vc4infer-1.2.1-py3-none-any.whl</a></li>
-<li><a href="vc4infer-1.2.2-py3-none-any.whl">vc4infer-1.2.2-py3-none-any.whl</a></li>
-</ul>
+<html><head><meta charset="utf-8"><title>vc4infer wheels</title></head><body>
+<h1>vc4infer 1.2.2</h1>
+<p>Pure-Python API for ONNX inference on the VideoCore IV QPUs.  The engine
+library (<code>libvc4infer.so.1</code>) comes from the <code>vc4infer</code>
+apt package.</p>
+<ul><li><a href="vc4infer-1.2.2-py3-none-any.whl">vc4infer-1.2.2-py3-none-any.whl</a></li></ul>
 <h2>Install</h2>
 <pre>
-sudo apt install vc4-toolkit          # the whole stack
+sudo apt install vc4infer
+pip install https://rughinnit.github.io/vc4-apt/pip/vc4infer-1.2.2-py3-none-any.whl
+# or as a pip index:
 pip install --extra-index-url https://rughinnit.github.io/vc4-apt/pip/simple/ vc4infer
-pip install --extra-index-url https://rughinnit.github.io/vc4-apt/pip/simple/ torch-vc4
 </pre>
-<p>Projects: <a href="simple/vc4infer/">vc4infer</a></p>
+<p>sha256: <code>bbde58cca8762caa011f1f723b6571a7bfa20b2d7e41cea20c1d2f263cbcd68a</code></p>
 </body></html>
