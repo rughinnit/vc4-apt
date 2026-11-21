@@ -1,20 +1,20 @@
 Architectures: arm64
 Codename: stable
 Components: main
-Date: Fri, 20 Nov 2026 23:51:42 +0000
+Date: Sat, 21 Nov 2026 11:22:50 +0000
 Description: VideoCore IV stack: vc4d, vc4infer, vc4-query, vc4-smi, vc4train, vc4top
 Label: vc4top
 Origin: vc4top
 Suite: stable
 MD5Sum:
  b3929ce896755fb512c6bdbd6327ce54            18017 main/binary-arm64/Packages
- c41013727843c851a96203bbf27e3739             6382 main/binary-arm64/Packages.gz
+ 14c3896465f822c863e1f339c1407674             6382 main/binary-arm64/Packages.gz
 SHA1:
  905065edb244eec29a40efd027e53425a69b1320            18017 main/binary-arm64/Packages
- ab2f4f21c57748a6c89ea9c8941f6b97e6583e31             6382 main/binary-arm64/Packages.gz
+ 4b0748494e7e09c6e175162a509863cbc6f41759             6382 main/binary-arm64/Packages.gz
 SHA256:
  c081c3b0187c2065d79b3e95284a23b040a3f17aa5865b97a095d18eb958e59e            18017 main/binary-arm64/Packages
- a8bf96b6ab7d7d8f05d8cca10141fe686abf146780522e95e223a935a4c96db4             6382 main/binary-arm64/Packages.gz
+ 651a7403f13f592962e915d53d8f36d60e91f6cc1b7d762358590a2cb5c30bc9             6382 main/binary-arm64/Packages.gz
 SHA512:
  9fb2df7b753ff3fbace3dd053016f0dd68254bab5ba7e61a8335ee673b04e958052d0c3b6c4d6ba7312b504ca0051044468841fe63798730a2345278fc76056b            18017 main/binary-arm64/Packages
- e2b8d17739195b1fe0d26d3cd3cabf62174963bd376bc1404e9f61e848591fed02c9c977fd1580607f608990776f4d706d45c96234b1b05c7f5705def3c72753             6382 main/binary-arm64/Packages.gz
+ 63289e0adbde2590c35762ef7d4d99b086b886e2631d2578596213d29aca218a5c2fb92d336359723f4b07cc1e78f14dde1a001ff15535fe841db6ee24f14d77             6382 main/binary-arm64/Packages.gz
