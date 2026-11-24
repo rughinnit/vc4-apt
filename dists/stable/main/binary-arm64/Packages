@@ -79,6 +79,33 @@ Description: VideoCore IV device query (the deviceQuery analogue)
   It reads /sys/kernel/vc4mon (vc4top's read-only module) and vcgencmd; it
   never opens /dev/mem.  Use --json for machine-readable output.
 
+Package: vc4-query
+Architecture: arm64
+Version: 1.0.3
+Priority: optional
+Section: utils
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 112
+Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
+Recommends: vc4d
+Suggests: vc4top-dkms
+Filename: pool/main/v/vc4-query/vc4-query_1.0.3_arm64.deb
+Size: 9664
+MD5sum: 347d319081b813766c72e52201b2042a
+SHA1: db489594142380e7a2c7a7780e0ec84792a6130e
+SHA256: d13414bd8164faf2375852ec93216fa903f46e10e96a0d41f47f1669695efb53
+SHA512: c560c63f0fe36fd59bec99debbc62fe995efb2afc861e8bfcd2e546f66798e3fe38dc53ae7e143333ac90613676e9e9bb9ae5ce53d5210c3d1192d3b760833ed
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: VideoCore IV device query (the deviceQuery analogue)
+ One command that reports the engine and daemon versions, the kernel, the
+ V3D revision and QPU count, the stock core/V3D clocks, die temperature, the
+ throttle register, CMA total/free, the daemon arena size, the op registry
+ counts, whether the installed engine carries the training/backward kernels,
+ the system kernel cache, and the installed vc4 package versions.
+  .
+  It reads /sys/kernel/vc4mon (vc4top's read-only module) and vcgencmd; it
+  never opens /dev/mem.  Use --json for machine-readable output.
+
 Package: vc4-smi
 Architecture: arm64
 Version: 1.0.0
@@ -93,6 +120,31 @@ MD5sum: 8e4b59aaaeb71b54fc9872ee28885b3c
 SHA1: a33322a4d3f117e418b143f538e225e0284d5c24
 SHA256: a8f7773072a5ee8e781692864e6ce886c3348acf438498646d0009a116a0f1fe
 SHA512: 8bb3847009be6a5b2af1dac75c9756699f4eb1743b54cbe7ac5449c5993d9705d5f7c9f868dd4482e432d1c3e1633b7c8ec257e77a2219886d6ae0421996481a
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: One-shot VideoCore IV status summary (the nvidia-smi analogue)
+ Prints state, QPU utilisation, stock core/V3D clocks, temperature,
+ throttle bits, CMA memory, QPU state and the clients attached to vc4d, in one
+ command.  Thin wrapper over 'vc4top --once' plus the read-only
+ /sys/kernel/vc4mon register window; --json for monitoring.
+  .
+  It exits non-zero when the GPU is unhealthy (active throttle bits,
+ undervoltage, a scheduler queue error or ERRSTAT error bits).  It changes no
+ clock, governor or voltage.
+
+Package: vc4-smi
+Architecture: arm64
+Version: 1.0.2
+Priority: optional
+Section: utils
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 112
+Depends: libc6 (>= 2.38), vc4top (>= 1.0.5)
+Filename: pool/main/v/vc4-smi/vc4-smi_1.0.2_arm64.deb
+Size: 8816
+MD5sum: 149801069bed6e0bd07b595cd386cfac
+SHA1: 4ab83894be85010b50799e27dc00391208b05e4b
+SHA256: 4f151e57eaf37c8cea329161b437f780789e55587c7fdaf91ff93536ed73b056
+SHA512: d13f1315dcb16418a2b604807d6ac50783003441071b1fc8739195ea5a2dffc04bb3060aef8fd516e468a2aec6e16f1fd98f30a09aa4918d43be7879f88364b9
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: One-shot VideoCore IV status summary (the nvidia-smi analogue)
  Prints state, QPU utilisation, stock core/V3D clocks, temperature,
@@ -207,7 +259,7 @@ Description: VideoCore IV toolkit: daemon, engine, headers, query, monitor, trai
 
 Package: vc4d
 Architecture: arm64
-Version: 1.2.9
+Version: 1.3.0
 Priority: optional
 Section: admin
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
@@ -215,12 +267,12 @@ Installed-Size: 140
 Depends: adduser
 Recommends: vc4infer
 Suggests: vc4top
-Filename: pool/main/v/vc4d/vc4d_1.2.9_arm64.deb
-Size: 37268
-MD5sum: ba0c0e0011b43e606d5b4c99a9b0ab23
-SHA1: 293e10e275d557226f7dd836399256b9b8a980ae
-SHA256: 994b834849cd30409aef8eef1f8f470a42ad0b862c6a0755a22e8fa468066a1c
-SHA512: b4df9db06dd2659ee3e76ff8ed2423de3479f3bbcf124041e3f123776a619821eacf36b70e47a2b14f044bb245924fb9762b2eb5479fa7524ab7c1e65bbe09b7
+Filename: pool/main/v/vc4d/vc4d_1.3.0_arm64.deb
+Size: 41288
+MD5sum: 5050b4a983d3365c6002a1188f411a9a
+SHA1: 21431db032f5080b1b2c3a3f178bd2fe80be9105
+SHA256: 6b37df54918d5c64080cad2b960b3a7d38a9b027030bc93cb6a63d4fca3064d1
+SHA512: 4bbb6bf812fb73929bb0e200ff955cf04c2544a8fdfa4377d5b1551060291cde4d38797de51220624547c58d5d311845e8bd96c79430a668cb11b37dc2bd7ca0
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: VideoCore IV QPU helper daemon (privileged half of the vc4 stack)
  vc4d owns /dev/mem and the V3D register window so the engine can run
@@ -233,18 +285,18 @@ Description: VideoCore IV QPU helper daemon (privileged half of the vc4 stack)
 
 Package: vc4infer-dev
 Architecture: arm64
-Version: 1.2.7
+Version: 1.2.11
 Priority: optional
 Section: libdevel
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
-Installed-Size: 104
+Installed-Size: 120
 Depends: vc4infer (>= 1.2.3) | vc4-toolkit-fast (>= 1.2.3), libc6 (>= 2.38)
-Filename: pool/main/v/vc4infer-dev/vc4infer-dev_1.2.7_arm64.deb
-Size: 13984
-MD5sum: b865b72ef7b5f7845221d6306816c84e
-SHA1: b1612a947d3089329ccb4d083026df3e6be6e4c1
-SHA256: 34d4d497118eeabec20bf03d7baa7c1671ffd0df14fc78770d87b4672de0ac0e
-SHA512: 7f9bceb7bcd1774ce4e672c18754b90be285b52b1a27ec39e2e21bed3b2298afe65942b3da2beb53298a3a131e3ca1b5113b58393154b343fabcd59966c78743
+Filename: pool/main/v/vc4infer-dev/vc4infer-dev_1.2.11_arm64.deb
+Size: 18776
+MD5sum: b244d3302f952fed5876dbd7029f421e
+SHA1: bbf829df8f7ec841934bfbfc67a39ee7525279a0
+SHA256: 8846b8ccd3a054111e0a844e88f9c0a263bff6eccd125d7b8b2ebcb295cba65c
+SHA512: 83b359f9d64e70a49f0c642aec4a6419cca953c20f349b9ef581474855e3eed337be5ede8d69feaea337fe1ad9c1d6c548eb1da3a65e9be0542ec44ee9abc62b
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Headers and build files for libvc4infer (VideoCore IV engine)
  Installs /usr/include/vc4infer.h, the libvc4infer.so linker symlink, a
@@ -258,19 +310,19 @@ Description: Headers and build files for libvc4infer (VideoCore IV engine)
 
 Package: vc4infer
 Architecture: arm64
-Version: 1.2.10
+Version: 1.2.11
 Priority: optional
 Section: misc
 Maintainer: rughinnit <rughinnit@users.noreply.github.com>
-Installed-Size: 15060
+Installed-Size: 15544
 Depends: python3 (>= 3.11), python3-numpy, python3-onnx (>= 1.14), python3-pil, libc6 (>= 2.38)
 Suggests: vc4d, vc4infer-dev, python3-onnxruntime
-Filename: pool/main/v/vc4infer/vc4infer_1.2.10_arm64.deb
-Size: 11788832
-MD5sum: 58283a344b309a4623ed8c3bdeb694a6
-SHA1: dfe825b90150390b549eaa01f7824e9027fa5e7a
-SHA256: bce52f885bdc35a73349769169fe73b682c7895e39f09318c7b4c0ac91e6f5b7
-SHA512: c272f381203e7a21f9e6ef95513508ba8105d609d58afd5ef1e159b89b2c380b5e0870e49642db5b6848f779d9d8a5066581ce2240f11fc4969634292577a6b2
+Filename: pool/main/v/vc4infer/vc4infer_1.2.11_arm64.deb
+Size: 11889968
+MD5sum: fe076ddbfe17e5e5cb0757c153f0d4d9
+SHA1: 9a41679fa5f688cbba4460d0ec02de6ef46d0397
+SHA256: f69b285de8938779efc6c134c49aeb0b7f50826e8831afc2e6602d99fc0c3ba2
+SHA512: 24b02bae3e325ff6d03358be6891f2a9147b327ca3bec727a52b95cdf9470d13078b6bfb9754a8404ebabdca0c5a0a63360fb6259105bd3071d387235c673632
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: ONNX inference on the Raspberry Pi VideoCore IV QPUs
  vc4infer executes fixed-shape fp32 ONNX graphs on the VideoCore IV (V3D) QPUs
@@ -361,6 +413,36 @@ MD5sum: 9dcf05b31dedb2d1b354954638388862
 SHA1: 10b9865a2d2fcf3929446a16956d43a378b74ff3
 SHA256: 7b5687b0a08a7149a6ec2af3f005881029827edc27635004e9c28046ca80b7cd
 SHA512: 3764219906a7681f2e5bb15160ee8ff62829909d437dd257083a88e74cca6e67d5743e36142a97db49158ab54bb96b6b0c215b88fcd5f7e626aad3233a7fdf85
+Homepage: https://github.com/rughinnit/vc4-stack
+Description: Toy QPU trainer demo (MLP 64-32-10) that proves the engine can train
+ Installs the engine's own training demo: a two-layer MLP trained full
+ batch with SGD or Adam, where every multiply-accumulate, activation, the fused
+ softmax+cross-entropy gradient and the optimizer step run as QPU kernels.  It
+ prints the loss every step and exits non-zero if the loss does not drop 5x.
+  .
+  This is a demonstration that the backward kernels in libvc4infer work on the
+  QPUs, not a training framework.  Run it with:
+  .
+    vc4train --opt adam --steps 300
+  .
+  It uses the vc4d socket when VC4INFER_DAEMON=1 (set by /etc/profile.d/vc4.sh)
+  or /dev/mem when run as root without the daemon.
+
+Package: vc4train
+Architecture: arm64
+Version: 1.0.2
+Priority: optional
+Section: utils
+Maintainer: rughinnit <rughinnit@users.noreply.github.com>
+Installed-Size: 124
+Depends: libc6 (>= 2.38), vc4infer (>= 1.2.1) | vc4-toolkit-fast
+Recommends: vc4d
+Filename: pool/main/v/vc4train/vc4train_1.0.2_arm64.deb
+Size: 10616
+MD5sum: 9d6aa2001851667f6d4dfed1094e92de
+SHA1: 6f2369b25aef84b97870df4f421cc7cfa5e7a9ce
+SHA256: 3add79685b583cf3c8a50026c88bffbb6b47eb26c2352b8a68e63f2f5b20cd5d
+SHA512: 9f29b04b14e74c851eb1b92f1f970184fa81f50715eeb5984bc710b60629a70834a8c61d8099c8ca23b6317d8a5551625aeb319cd71fc392b43e1735ac4b22da
 Homepage: https://github.com/rughinnit/vc4-stack
 Description: Toy QPU trainer demo (MLP 64-32-10) that proves the engine can train
  Installs the engine's own training demo: a two-layer MLP trained full
